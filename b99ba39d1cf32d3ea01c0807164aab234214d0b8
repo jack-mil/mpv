@@ -1,0 +1,10 @@
+Tested with:
+
+    local utils = require 'mp.utils'
+    local v = {foo = "bar", num = 42, nested = {a = 1}}
+
+    print("Compact:")
+    print(utils.format_json(v))
+    print()
+    print("Pretty:")
+    print(utils.format_json(v, true))
